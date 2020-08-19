@@ -1,0 +1,365 @@
+
+<?php 
+session_start();
+
+if (isset($_POST['loginBtn']))
+{
+	if($_SESSION['login'])
+		{	
+			echo "<script type='text/javascript'>alert('it seems you previously logged in our website!');</script>";
+			echo "<script> window.location.assign('dashboard.php?link=0'); </script>";	
+		}
+	echo "<script> window.location.assign('login.php'); </script>";	
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>About Us</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- ##### Preloader ##### -->
+    <div id="preloader">
+        <i class="circle-preloader"></i>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="header-content h-100 d-flex align-items-center justify-content-between">
+                            <div class="academy-logo">
+                            <!---    <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>--->
+                            </div>
+                            
+							<div class="login-content">
+								<form method="POST" action=''>
+									<input class="btn" type="submit" name="loginBtn" value="LOG IN"></span>
+									<input class="btn academy-btn" style="width:10px; height: 60px; margin-left: 30px"type="submit" name="register" value="REGISTER"></span>
+								</form>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="academy-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="academyNav">
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.php">Home</a></li>
+                                    <li><a href="#">Quick Links</a>
+                                        <ul class="dropdown">
+                                            <li><a href="about-us.html">About Us</a></li>
+                                            <li><a href="codeof-conduct.php">Conduct Codes</a></li>
+                                            <li><a href="course.html">Our Team</a></li>
+                                            <li><a href="FAQ-s.php">FAQ's</a></li>
+                                        </ul>
+                                    </li>
+									<li><a href="blog.html">Blog</a></li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="course.html">Course</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+
+                        <!-- Calling Info -->
+                        <div class="calling-info">
+                            <div class="call-center">
+                                <a href="tel:+654563325568889"><i class="icon-telephone-2"></i> <span>(+65) 456 332 5568 889</span></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcumb Area Start ##### -->
+    <div class="breadcumb-area bg-img" style="background-image: url(img/bg-img/breadcumb.jpg);">
+        <div class="bradcumbContent">
+            <h2>About Us</h2>
+        </div>
+    </div>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### About Us Area Start ##### -->
+    <section class="about-us-area mt-50 section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
+                        <span>The Best in us</span>
+                        <h3>We are the Connections</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row"><label style="width: 513px;height: 26px;margin-left: 23px;font-size: 26px;margin-top: 27px;"><strong>Who are we?</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;.<br></label></div>
+                    <label
+                        style="width: 513px;height: 250px;margin-left: 11px;font-size: 16px;margin-top: 19px;">We are here with a online platform, where the students of MMDU, proffessors/Teachers and other staff of MMDU can interect together.&nbsp;<br>The vision with the virtual community is to provide a platform for everyone who uses it with
+                        a frictionless digital experience wherever they are in a world. Anytime, anywhere access will be achieved.<br></label>
+                </div>
+                <div class="col-md-6"><img class="rounded-circle" data-aos="fade-up" src="assets/img/345.png" style="width: 400px;height: 250px;margin-left: 39px;"></div>
+            </div>
+			<div class="row">
+                <div class="col-md-6"><img class="rounded-circle" src="assets/img/123.jpg" style="width: 400px;height: 250px;"></div>
+                <div class="col-md-6">
+                    <div class="row"><label style="width: 513px;height: 26px;margin-left: 23px;font-size: 26px;margin-top: 27px;padding-right: 0px;padding-left: -67px;"><strong>Why Us?</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;.<br></label></div>
+                    <label
+                        style="height: 251px;width: 514px;margin-left: 11px;font-size: 16px;padding-top: 0px;margin-top: 11px;">This Community is totally bulit on common problems and common interests.This platform will be completely scalable and secure and will feature online compatability in a flawless, employee- centric manner. This platform enables and supports
+                        the community interaction and helps the students, proffessors and other staff to resolve their problems.<br><br></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-slides owl-carousel mt-100 wow fadeInUp" data-wow-delay="600ms">
+                        <img src="img/bg-img/bg-3.jpg" alt="">
+                        <img src="img/bg-img/bg-2.jpg" alt="">
+                        <img src="img/bg-img/bg-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### About Us Area End ##### -->
+
+    <!-- ##### Team Area Start ##### -->
+    <section class="teachers-area section-padding-0-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
+                        <span>The Best in Us</span>
+                        <h3>Meet Our Developers</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single Teachers -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="400ms">
+                        <!-- Thumbnail -->
+                        <div class="teachers-thumbnail">
+                            <img src="img/bg-img/tea1.jpg" alt="">
+                        </div>
+                        <!-- Meta Info -->
+                        <div class="teachers-info mt-30">
+                            <h5>Maria D. Smith</h5>
+                            <span>Marketing Proffesor</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Teachers -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <!-- Thumbnail -->
+                        <div class="teachers-thumbnail">
+                            <img src="img/bg-img/tea2.jpg" alt="">
+                        </div>
+                        <!-- Meta Info -->
+                        <div class="teachers-info mt-30">
+                            <h5>Simon Duval</h5>
+                            <span>Digital Proffesor</span>
+                        </div>
+                    </div>
+                </div>
+				<!-- Single Teachers -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <!-- Thumbnail -->
+                        <div class="teachers-thumbnail">
+                            <img src="img/bg-img/tea2.jpg" alt="">
+                        </div>
+                        <!-- Meta Info -->
+                        <div class="teachers-info mt-30">
+                            <h5>Simon Duval</h5>
+                            <span>Digital Proffesor</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Teachers -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="600ms">
+                        <!-- Thumbnail -->
+                        <div class="teachers-thumbnail">
+                            <img src="img/bg-img/tea3.jpg" alt="">
+                        </div>
+                        <!-- Meta Info -->
+                        <div class="teachers-info mt-30">
+                            <h5>James Hogan</h5>
+                            <span>HTML Proffesor</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Teachers -->
+                <div class="col-12 col-sm-6 col-lg-12">
+                    <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="700ms">
+                        <!-- Thumbnail -->
+                        <div class="teachers-thumbnail">
+                            <img src="img/bg-img/tea4.jpg" alt="">
+                        </div>
+                        <!-- Meta Info -->
+                        <div class="teachers-info mt-30">
+                            <h5>Claudia Williams</h5>
+                            <span>Marketing Proffesor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ##### Features Area Start ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="main-footer-area section-padding-100-0">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="footer-widget mb-100">
+                            <div class="widget-title">
+                             <!--   <a href="#"><img src="img/core-img/logo2.png" alt=""></a>-->
+                            </div>
+                            <p>Our community include people from many different backgrounds. Our contributors and users are committed to providing a friendly, safe and welcoming environment for all..</p>
+                            <div class="footer-social-info" align="center">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="footer-widget mb-100">
+                            <div class="widget-title">
+                                <h6>Usefull Links</h6>
+                            </div>
+                            <nav>
+                                <ul class="useful-links">
+                                    <li><a href="index.php">Home</a></li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="codeOf-conduct.php">Code of Conduct</a></li>
+                                    <li><a href="FAQ-s.php">FAQ's</a></li>
+									<li><a href="#">Our Team</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="footer-widget mb-100">
+                            <div class="widget-title">
+                                <h6>Gallery</h6>
+                            </div>
+                            <div class="gallery-list d-flex justify-content-between flex-wrap">
+                                <a href="img/bg-img/gallery3.jpg" class="gallery-img" title="Gallery Image 1"><img src="img/bg-img/gallery3.jpg" alt=""></a>
+                                <a href="img/bg-img/gallery6.jpg" class="gallery-img" title="Gallery Image 2"><img src="img/bg-img/gallery2.jpg" alt=""></a>
+                                <a href="img/bg-img/gallery3.jpg" class="gallery-img" title="Gallery Image 3"><img src="img/bg-img/gallery3.jpg" alt=""></a>
+                                <a href="img/bg-img/gallery4.jpg" class="gallery-img" title="Gallery Image 4"><img src="img/bg-img/gallery4.jpg" alt=""></a>
+                                <a href="img/bg-img/gallery5.jpg" class="gallery-img" title="Gallery Image 5"><img src="img/bg-img/gallery5.jpg" alt=""></a>
+                                <a href="img/bg-img/gallery6.jpg" class="gallery-img" title="Gallery Image 6"><img src="img/bg-img/gallery6.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="footer-widget mb-100">
+                            <div class="widget-title">
+                                <h6>Contact</h6>
+                            </div>
+                            <div class="single-contact d-flex mb-30">
+                                <i class="icon-placeholder"></i>
+                                <p>Our Address</p>
+                            </div>
+                            <div class="single-contact d-flex mb-30">
+                                <i class="icon-telephone-1"></i>
+                                <p>Main: phoneNumber <br>Office: phoneNumber</p>
+                            </div>
+                            <div class="single-contact d-flex">
+                                <i class="icon-contract"></i>
+                                <p>office@yourbusiness.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>

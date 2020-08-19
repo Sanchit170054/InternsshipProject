@@ -1,2 +1,2 @@
 # InternsshipProject
-These Repository consist of my Internship Project 
+This Repository consist of my Internship Project 
